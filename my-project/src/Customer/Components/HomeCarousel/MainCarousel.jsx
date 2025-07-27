@@ -9,18 +9,21 @@ const MainCarousel = () => {
     <img
       src={item.image}
       alt="Carousel Item"
-      className="cursor-pointer"
+      className="cursor-pointer w-full h-full object-cover"
       role="presentation"
     />
   ));
 
   return (
-    <AliceCarousel
+      <AliceCarousel
           items={items}
           disableButtonsControls
           infinite
+          autoPlayInterval={2000}
+          autoPlay
           disableDotsControls
         />
+    
     
   );
 };
