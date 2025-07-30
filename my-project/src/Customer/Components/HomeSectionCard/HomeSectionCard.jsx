@@ -1,22 +1,24 @@
 import React from "react";
 
-const HomeSectionCard = () => {
+const HomeSectionCard = ({product}) => {
   return (
     <div className="cursor-pointer bg-white flex flex-col rounded-lg shadow-lg overflow-hidden w-[15rem] mx-3">
       <div className="h-[13rem] w-[10rem]">
         <img
           className="object-cover object-top w-full h-full"
-          src="/image1.png"
+          src={product.image}
           alt="Product"
         />
       </div>
       <div className="p-4">
         <h3 className="text-lg font-medium text-gray-900">
-          Slimline 2 Door Steel Almirah
+          {product.title}
         </h3>
-        <p className="mt-2 text-sm text-gray-500">
-          4 Shelves, Royal Ivory Color
-        </p>
+        <div className="flex items-center space-x-2">
+          <p className="font-semibold">₹{product.discountedPrice}</p>
+          <p className="line-through opacity-50">₹{product.price}</p>
+          <p className="text-green-500 font-semibold">{product.discountPercent}% off</p>
+        </div>
       </div>
     </div>
   );
