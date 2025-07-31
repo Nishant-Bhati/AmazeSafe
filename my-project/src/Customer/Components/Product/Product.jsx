@@ -40,6 +40,101 @@ export default function Product() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+
+  // Filter products based on URL search parameters
+  const filterProducts = (products) => {
+    const searchParams = new URLSearchParams(location.search);
+
+    return products.filter((product) => {
+      // Color filter
+      const colorFilter = searchParams.get("color");
+      if (colorFilter) {
+        const selectedColors = colorFilter.split(",");
+        if (
+          !selectedColors.some((color) =>
+            product.color.toLowerCase().includes(color.toLowerCase())
+          )
+        ) {
+          return false;
+        }
+      }
+
+      // Size filter
+      const sizeFilter = searchParams.get("size");
+      if (sizeFilter) {
+        const selectedSizes = sizeFilter.split(",");
+        if (!selectedSizes.includes(product.size)) {
+          return false;
+        }
+      }
+
+      // Price filter
+      const priceFilter = searchParams.get("price");
+      if (priceFilter) {
+        const selectedPriceRanges = priceFilter.split(",");
+        const productPrice = product.discountedPrice;
+
+        const isInPriceRange = selectedPriceRanges.some((range) => {
+          const [min, max] = range.split("-").map(Number);
+          return productPrice >= min && productPrice <= max;
+        });
+
+        if (!isInPriceRange) {
+          return false;
+        }
+      }
+
+      // Discount filter
+      const discountFilter = searchParams.get("discount");
+      if (discountFilter) {
+        const selectedDiscounts = discountFilter.split(",").map(Number);
+        const maxSelectedDiscount = Math.max(...selectedDiscounts);
+        if (product.discountPercent < maxSelectedDiscount) {
+          return false;
+        }
+      }
+
+      // Availability/Stock filter
+      const stockFilter = searchParams.get("stock");
+      if (stockFilter) {
+        const selectedStockOptions = stockFilter.split(",");
+        const isInStock = product.quantity > 0;
+
+        if (selectedStockOptions.includes("in_stock") && !isInStock) {
+          return false;
+        }
+        if (selectedStockOptions.includes("out_of_stock") && isInStock) {
+          return false;
+        }
+      }
+
+      return true;
+    });
+  };
+
+  // Get filtered products
+  const filteredProducts = filterProducts(almirah);
+
+  // Sort products based on URL parameters
+  const sortProducts = (products) => {
+    const searchParams = new URLSearchParams(location.search);
+    const sortParam = searchParams.get("sort");
+
+    if (sortParam === "price_low") {
+      return [...products].sort(
+        (a, b) => a.discountedPrice - b.discountedPrice
+      );
+    } else if (sortParam === "price_high") {
+      return [...products].sort(
+        (a, b) => b.discountedPrice - a.discountedPrice
+      );
+    }
+
+    return products;
+  };
+
+  const sortedAndFilteredProducts = sortProducts(filteredProducts);
+
   const handleFilter = (value, sectionId) => {
     const searchParams = new URLSearchParams(location.search);
     let filterValue = searchParams.getAll(sectionId);
@@ -474,9 +569,23 @@ export default function Product() {
               {/* Product grid */}
               <div className="lg:col-span-4 w-full">
                 <div className="flex flex-wrap justify-center bg-white py-5">
-                  {almirah.map((item) => (
-                    <ProductCard product={item} />
-                  ))}
+                  {sortedAndFilteredProducts.length > 0 ? (
+                    sortedAndFilteredProducts.map((item, index) => (
+                      <ProductCard
+                        key={`${item.title}-${index}`}
+                        product={item}
+                      />
+                    ))
+                  ) : (
+                    <div className="text-center py-10">
+                      <p className="text-gray-500 text-lg">
+                        No products found matching your filters.
+                      </p>
+                      <p className="text-gray-400 text-sm mt-2">
+                        Try adjusting your filter criteria.
+                      </p>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
