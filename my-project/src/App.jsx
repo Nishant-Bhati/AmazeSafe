@@ -3,13 +3,19 @@ import Navigation from "./Customer/Components/Navigation/Navigation";
 import HomePage from "./Customer/Pages/HomePage/HomePage";
 import Footer from "./Customer/Components/Footer/Footer";
 import Product from "./Customer/Components/Product/Product";
+import ProductDetails from "./Customer/Components/ProductDetails/ProductDetails";
+import Cart from "./Customer/Components/Cart/Cart";
+import Checkout from "./Customer/Components/Checkout/Checkout";
 function App() {
   return (
     <>
       <Navigation />
       <div>
         {/* <HomePage/> */}
-        <Product/>
+        {/* <Product/> */}
+        {/* <ProductDetails/> */}
+        {/* <Cart/> */}
+        <Checkout/>
       </div>
       <Footer/>
     </>

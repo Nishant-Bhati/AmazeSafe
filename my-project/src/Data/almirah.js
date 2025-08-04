@@ -11,7 +11,15 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Wardrobes",
-    productDescription: "Durable steel construction almirah with anti-rust coating. Features spacious compartments and secure locking mechanism. Perfect for bedroom or office storage needs."
+    productDescription: "Durable steel construction almirah with anti-rust coating. Features spacious compartments and secure locking mechanism. Perfect for bedroom or office storage needs.",
+    features: [
+      "Anti-rust coating",
+      "Secure locking mechanism",
+      "Spacious compartments",
+      "Durable steel construction",
+      "Easy assembly",
+      "Scratch resistant surface"
+    ]
   },
   {
     image: "image2.png",
@@ -25,7 +33,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Wardrobes",
-    productDescription: "Premium engineered wood wardrobe with elegant finish. Includes hanging rod, shelves, and drawers. Ideal for organizing clothes and accessories in style."
+    productDescription: "Premium engineered wood wardrobe with elegant finish. Includes hanging rod, shelves, and drawers. Ideal for organizing clothes and accessories in style.",
+    features: [
+      "Premium engineered wood",
+      "Elegant finish",
+      "Hanging rod included",
+      "Multiple shelves",
+      "Built-in drawers",
+      "Spacious design",
+      "Easy maintenance"
+    ]
   },
   {
     image: "image3.png",
@@ -39,7 +56,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Lockers",
-    productDescription: "Compact single door metal locker suitable for schools, gyms, and offices. Features ventilation slots and secure key lock system for personal storage."
+    productDescription: "Compact single door metal locker suitable for schools, gyms, and offices. Features ventilation slots and secure key lock system for personal storage.",
+    features: [
+      "Ventilation slots",
+      "Secure key lock system",
+      "Compact design",
+      "Metal construction",
+      "Personal storage solution",
+      "Suitable for schools/gyms/offices",
+      "Rust resistant"
+    ]
   },
   {
     image: "image4.png",
@@ -53,7 +79,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Wardrobes",
-    productDescription: "Spacious sliding door wardrobe with mirror panels. Includes multiple compartments, hanging space, and soft-close mechanism. Perfect for large bedrooms."
+    productDescription: "Spacious sliding door wardrobe with mirror panels. Includes multiple compartments, hanging space, and soft-close mechanism. Perfect for large bedrooms.",
+    features: [
+      "Sliding door design",
+      "Mirror panels",
+      "Multiple compartments",
+      "Hanging space",
+      "Soft-close mechanism",
+      "Spacious interior",
+      "Easy to assemble"
+    ]
   },
   {
     image: "image5.png",
@@ -67,7 +102,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Wardrobes",
-    productDescription: "Steel almirah with full-length mirror doors. Combines storage functionality with dressing mirror convenience. Rust-resistant finish ensures long-lasting durability."
+    productDescription: "Steel almirah with full-length mirror doors. Combines storage functionality with dressing mirror convenience. Rust-resistant finish ensures long-lasting durability.",
+    features: [
+      "Full-length mirror doors",
+      "Steel construction",
+      "Rust-resistant finish",
+      "Spacious interior",
+      "Secure locking mechanism",
+      "Easy to assemble",
+      "Durable design"
+    ]
   },
   {
     image: "image1.png",
@@ -81,7 +125,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Wardrobes",
-    productDescription: "Space-saving compact wardrobe perfect for small rooms. Features adjustable shelves and hanging rod. Ideal for apartments and guest rooms."
+    productDescription: "Space-saving compact wardrobe perfect for small rooms. Features adjustable shelves and hanging rod. Ideal for apartments and guest rooms.",
+    features: [
+      "Compact design",
+      "Adjustable shelves",
+      "Hanging rod included",
+      "Space-saving",
+      "Easy to assemble",
+      "Durable construction",
+      "Affordable price"
+    ]
   },
   {
     image: "image2.png",
@@ -95,7 +148,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Cabinets",
-    productDescription: "Industrial-grade steel cabinet with reinforced construction. Multiple locking points provide enhanced security. Suitable for office documents and valuable items."
+    productDescription: "Industrial-grade steel cabinet with reinforced construction. Multiple locking points provide enhanced security. Suitable for office documents and valuable items.",
+    features: [
+      "Industrial-grade steel",
+      "Reinforced construction",
+      "Multiple locking points",
+      "Enhanced security",
+      "Suitable for office documents",
+      "Valuable item storage",
+      "Durable design"
+    ]
   },
   {
     image: "image3.png",
@@ -109,7 +171,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Cabinets",
-    productDescription: "Versatile multi-door storage solution with oak wood finish. Features adjustable shelving and separate compartments for organized storage of various items."
+    productDescription: "Versatile multi-door storage solution with oak wood finish. Features adjustable shelving and separate compartments for organized storage of various items.",
+    features: [
+      "Multi-door design",
+      "Oak wood finish",
+      "Adjustable shelving",
+      "Separate compartments",
+      "Organized storage",
+      "Versatile design",
+      "Easy to assemble"
+    ]
   },
   {
     image: "image4.png",
@@ -123,7 +194,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Wardrobes",
-    productDescription: "Contemporary wardrobe with tempered glass doors and walnut finish. LED lighting included for better visibility. Perfect for modern bedroom interiors."
+    productDescription: "Contemporary wardrobe with tempered glass doors and walnut finish. LED lighting included for better visibility. Perfect for modern bedroom interiors.",
+    features: [
+      "Tempered glass doors",
+      "Walnut finish",
+      "LED lighting",
+      "Better visibility",
+      "Modern design",
+      "Spacious interior",
+      "Easy to assemble"
+    ]
   },
   {
     image: "image5.png",
@@ -137,7 +217,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Portable Storage",
-    productDescription: "Lightweight fabric wardrobe with steel frame. Easy assembly and disassembly for temporary storage needs. Ideal for hostels, temporary accommodation, and seasonal use."
+    productDescription: "Lightweight fabric wardrobe with steel frame. Easy assembly and disassembly for temporary storage needs. Ideal for hostels, temporary accommodation, and seasonal use.",
+    features: [
+      "Lightweight fabric",
+      "Steel frame",
+      "Easy assembly",
+      "Temporary storage solution",
+      "Portable design",
+      "Affordable price",
+      "Compact size"
+    ]
   },
   {
     image: "image1.png",
@@ -151,7 +240,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Wardrobes",
-    productDescription: "Space-efficient corner almirah maximizes room utilization. Steel construction with powder coating finish. Perfect for optimizing storage in limited spaces."
+    productDescription: "Space-efficient corner almirah maximizes room utilization. Steel construction with powder coating finish. Perfect for optimizing storage in limited spaces.",
+    features: [
+      "Corner design",
+      "Steel construction",
+      "Powder coating finish",
+      "Space-efficient",
+      "Maximizes room utilization",
+      "Easy to assemble",
+      "Durable design"
+    ]
   },
   {
     image: "image2.png",
@@ -165,7 +263,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Office Furniture",
     thirdLevelCategory: "Executive Storage",
-    productDescription: "Premium mahogany finish wardrobe designed for executive offices. Features suit hanging space, shoe rack, and document storage compartments."
+    productDescription: "Premium mahogany finish wardrobe designed for executive offices. Features suit hanging space, shoe rack, and document storage compartments.",
+    features: [
+      "Premium mahogany finish",
+      "Suit hanging space",
+      "Shoe rack included",
+      "Document storage compartments",
+      "Executive office design",
+      "Spacious interior",
+      "Easy to assemble"
+    ]
   },
   {
     image: "image3.png",
@@ -179,7 +286,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Cabinets",
-    productDescription: "Tall storage cabinet with extra height for maximum storage capacity. Multiple shelves and compartments for efficient organization of household items."
+    productDescription: "Tall storage cabinet with extra height for maximum storage capacity. Multiple shelves and compartments for efficient organization of household items.",
+    features: [
+      "Double height design",
+      "Extra storage capacity",
+      "Multiple shelves",
+      "Compartments for organization",
+      "Efficient storage solution",
+      "Easy to assemble",
+      "Durable construction"
+    ]
   },
   {
     image: "image4.png",
@@ -193,7 +309,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Kids Furniture",
     thirdLevelCategory: "Kids Storage",
-    productDescription: "Bright and colorful wardrobe designed specifically for children. Child-safe construction with rounded edges and easy-to-use handles. Perfect for kids' rooms."
+    productDescription: "Bright and colorful wardrobe designed specifically for children. Child-safe construction with rounded edges and easy-to-use handles. Perfect for kids' rooms.",
+    features: [
+      "Colorful design",
+      "Child-safe construction",
+      "Rounded edges",
+      "Easy-to-use handles",
+      "Kids' room design",
+      "Spacious interior",
+      "Affordable price"
+    ]
   },
   {
     image: "image5.png",
@@ -207,7 +332,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Industrial Furniture",
     thirdLevelCategory: "Lockers",
-    productDescription: "Heavy-duty industrial locker suitable for factories and workshops. Reinforced steel construction with weather-resistant coating for harsh environments."
+    productDescription: "Heavy-duty industrial locker suitable for factories and workshops. Reinforced steel construction with weather-resistant coating for harsh environments.",
+    features: [
+      "Heavy-duty construction",
+      "Reinforced steel",
+      "Weather-resistant coating",
+      "Industrial design",
+      "Suitable for factories/workshops",
+      "Spacious interior",
+      "Durable design"
+    ]
   },
   {
     image: "image1.png",
@@ -221,7 +355,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Luxury Wardrobes",
-    productDescription: "Premium luxury wardrobe with cherry wood finish. Features multiple compartments, full-extension drawers, and soft-close doors. Ideal for master bedrooms."
+    productDescription: "Premium luxury wardrobe with cherry wood finish. Features multiple compartments, full-extension drawers, and soft-close doors. Ideal for master bedrooms.",
+    features: [
+      "Luxury design",
+      "Cherry wood finish",
+      "Multiple compartments",
+      "Full-extension drawers",
+      "Soft-close doors",
+      "Spacious interior",
+      "Easy to assemble"
+    ]
   },
   {
     image: "image2.png",
@@ -235,7 +378,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Cabinets",
-    productDescription: "Narrow tall cabinet designed for tight spaces. Maximizes vertical storage while minimizing floor footprint. Perfect for apartments and small homes."
+    productDescription: "Narrow tall cabinet designed for tight spaces. Maximizes vertical storage while minimizing floor footprint. Perfect for apartments and small homes.",
+    features: [
+      "Space-saving design",
+      "Tall cabinet",
+      "Maximizes vertical storage",
+      "Minimizes floor footprint",
+      "Perfect for tight spaces",
+      "Easy to assemble",
+      "Durable construction"
+    ]
   },
   {
     image: "image3.png",
@@ -249,7 +401,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Armoires",
-    productDescription: "Classic vintage-style armoire with antique finish. Hand-crafted details and traditional design elements. Perfect for traditional and vintage-themed interiors."
+    productDescription: "Classic vintage-style armoire with antique finish. Hand-crafted details and traditional design elements. Perfect for traditional and vintage-themed interiors.",
+    features: [
+      "Vintage design",
+      "Antique finish",
+      "Hand-crafted details",
+      "Traditional design elements",
+      "Perfect for traditional/vintage interiors",
+      "Spacious interior",
+      "Easy to assemble"
+    ]
   },
   {
     image: "image4.png",
@@ -263,7 +424,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Commercial Furniture",
     thirdLevelCategory: "Gym Equipment",
-    productDescription: "Commercial-grade 12-unit locker system for gyms and sports facilities. Individual compartments with secure locking mechanisms and ventilation."
+    productDescription: "Commercial-grade 12-unit locker system for gyms and sports facilities. Individual compartments with secure locking mechanisms and ventilation.",
+    features: [
+      "Commercial-grade construction",
+      "12-unit locker system",
+      "Individual compartments",
+      "Secure locking mechanisms",
+      "Ventilation",
+      "Perfect for gyms/sports facilities",
+      "Durable design"
+    ]
   },
   {
     image: "image5.png",
@@ -277,7 +447,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Wardrobes",
-    productDescription: "Elegant sliding door wardrobe with full-length mirrors. Space-saving design with smooth sliding mechanism. Combines storage and dressing room functionality."
+    productDescription: "Elegant sliding door wardrobe with full-length mirrors. Space-saving design with smooth sliding mechanism. Combines storage and dressing room functionality.",
+    features: [
+      "Sliding door design",
+      "Full-length mirrors",
+      "Space-saving design",
+      "Smooth sliding mechanism",
+      "Combines storage and dressing room functionality",
+      "Spacious interior",
+      "Easy to assemble"
+    ]
   },
   {
     image: "image1.png",
@@ -291,7 +470,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Modular Systems",
-    productDescription: "Flexible modular storage system with teak finish. Customizable configuration allows adaptation to changing storage needs. Premium quality construction."
+    productDescription: "Flexible modular storage system with teak finish. Customizable configuration allows adaptation to changing storage needs. Premium quality construction.",
+    features: [
+      "Modular design",
+      "Teak finish",
+      "Customizable configuration",
+      "Adaptable to changing storage needs",
+      "Premium quality construction",
+      "Spacious interior",
+      "Easy to assemble"
+    ]
   },
   {
     image: "image2.png",
@@ -305,7 +493,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Medical Furniture",
     thirdLevelCategory: "Medical Storage",
-    productDescription: "Medical-grade steel cabinet meeting hospital standards. Anti-bacterial coating and easy-to-clean surfaces. Secure storage for medical supplies and equipment."
+    productDescription: "Medical-grade steel cabinet meeting hospital standards. Anti-bacterial coating and easy-to-clean surfaces. Secure storage for medical supplies and equipment.",
+    features: [
+      "Medical-grade construction",
+      "Anti-bacterial coating",
+      "Easy-to-clean surfaces",
+      "Secure storage for medical supplies",
+      "Meets hospital standards",
+      "Spacious interior",
+      "Durable design"
+    ]
   },
   {
     image: "image3.png",
@@ -319,7 +516,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Institutional Furniture",
     thirdLevelCategory: "Student Storage",
-    productDescription: "Budget-friendly wardrobe designed for student accommodations. Durable construction suitable for high-usage environments. Compact size fits standard hostel rooms."
+    productDescription: "Budget-friendly wardrobe designed for student accommodations. Durable construction suitable for high-usage environments. Compact size fits standard hostel rooms.",
+    features: [
+      "Budget-friendly design",
+      "Durable construction",
+      "Compact size",
+      "Fits standard hostel rooms",
+      "Suitable for high-usage environments",
+      "Spacious interior",
+      "Affordable price"
+    ]
   },
   {
     image: "image4.png",
@@ -333,7 +539,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Office Furniture",
     thirdLevelCategory: "Executive Storage",
-    productDescription: "Professional-grade steel almirah for executive offices. Sophisticated black finish with secure locking system. Ideal for storing important documents and personal items."
+    productDescription: "Professional-grade steel almirah for executive offices. Sophisticated black finish with secure locking system. Ideal for storing important documents and personal items.",
+    features: [
+      "Professional-grade construction",
+      "Sophisticated black finish",
+      "Secure locking system",
+      "Ideal for executive offices",
+      "Spacious interior",
+      "Durable design",
+      "Easy to assemble"
+    ]
   },
   {
     image: "image5.png",
@@ -347,7 +562,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Walk-in Closets",
-    productDescription: "Complete walk-in closet system with maple wood finish. Includes hanging rods, shelves, drawers, and shoe racks. Professional installation included."
+    productDescription: "Complete walk-in closet system with maple wood finish. Includes hanging rods, shelves, drawers, and shoe racks. Professional installation included.",
+    features: [
+      "Complete walk-in closet system",
+      "Maple wood finish",
+      "Hanging rods included",
+      "Shelves and drawers",
+      "Shoe racks",
+      "Professional installation included",
+      "Spacious interior"
+    ]
   },
   {
     image: "image1.png",
@@ -361,7 +585,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Security Furniture",
     thirdLevelCategory: "Security Lockers",
-    productDescription: "High-security steel locker with advanced locking mechanism. Reinforced construction provides maximum protection for valuable items and documents."
+    productDescription: "High-security steel locker with advanced locking mechanism. Reinforced construction provides maximum protection for valuable items and documents.",
+    features: [
+      "High-security construction",
+      "Advanced locking mechanism",
+      "Reinforced construction",
+      "Maximum protection for valuable items",
+      "Spacious interior",
+      "Durable design",
+      "Easy to assemble"
+    ]
   },
   {
     image: "image2.png",
@@ -375,7 +608,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Bedroom Furniture",
     thirdLevelCategory: "Bedroom Storage",
-    productDescription: "Elegant rosewood finish wardrobe perfect for bedrooms. Three-door design with internal organizers and hanging space. Matches well with traditional bedroom sets."
+    productDescription: "Elegant rosewood finish wardrobe perfect for bedrooms. Three-door design with internal organizers and hanging space. Matches well with traditional bedroom sets.",
+    features: [
+      "Elegant rosewood finish",
+      "Three-door design",
+      "Internal organizers",
+      "Hanging space",
+      "Matches traditional bedroom sets",
+      "Spacious interior",
+      "Easy to assemble"
+    ]
   },
   {
     image: "image3.png",
@@ -389,7 +631,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Office Furniture",
     thirdLevelCategory: "File Storage",
-    productDescription: "Professional file storage cabinet with hanging file system. Lockable drawers ensure document security. Suitable for offices and administrative areas."
+    productDescription: "Professional file storage cabinet with hanging file system. Lockable drawers ensure document security. Suitable for offices and administrative areas.",
+    features: [
+      "Professional file storage",
+      "Hanging file system",
+      "Lockable drawers",
+      "Document security",
+      "Suitable for offices/administrative areas",
+      "Spacious interior",
+      "Durable design"
+    ]
   },
   {
     image: "image4.png",
@@ -403,7 +654,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Hospitality Furniture",
     thirdLevelCategory: "Hotel Storage",
-    productDescription: "Commercial-grade wardrobe designed for hotel rooms. Durable construction withstands frequent use. Includes safe compartment and luggage storage area."
+    productDescription: "Commercial-grade wardrobe designed for hotel rooms. Durable construction withstands frequent use. Includes safe compartment and luggage storage area.",
+    features: [
+      "Commercial-grade construction",
+      "Durable design",
+      "Safe compartment",
+      "Luggage storage area",
+      "Suitable for hotel rooms",
+      "Spacious interior",
+      "Easy to assemble"
+    ]
   },
   {
     image: "image5.png",
@@ -417,7 +677,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Wardrobes",
-    productDescription: "Perfectly sized wardrobe for modern apartments. Light oak finish complements contemporary interiors. Efficient internal layout maximizes storage capacity."
+    productDescription: "Perfectly sized wardrobe for modern apartments. Light oak finish complements contemporary interiors. Efficient internal layout maximizes storage capacity.",
+    features: [
+      "Perfectly sized for apartments",
+      "Light oak finish",
+      "Contemporary design",
+      "Efficient internal layout",
+      "Maximizes storage capacity",
+      "Spacious interior",
+      "Easy to assemble"
+    ]
   },
   {
     image: "image1.png",
@@ -431,7 +700,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Educational Furniture",
     thirdLevelCategory: "School Storage",
-    productDescription: "Specialized cabinet for school uniform storage. Multiple hooks and compartments keep uniforms organized and wrinkle-free. Suitable for schools and boarding facilities."
+    productDescription: "Specialized cabinet for school uniform storage. Multiple hooks and compartments keep uniforms organized and wrinkle-free. Suitable for schools and boarding facilities.",
+    features: [
+      "Specialized uniform storage",
+      "Multiple hooks",
+      "Compartments for organization",
+      "Keeps uniforms wrinkle-free",
+      "Suitable for schools/boarding facilities",
+      "Spacious interior",
+      "Durable design"
+    ]
   },
   {
     image: "image2.png",
@@ -445,7 +723,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Designer Wardrobes",
-    productDescription: "Contemporary designer wardrobe with frosted glass panels. LED strip lighting and premium hardware. Statement piece for modern luxury bedrooms."
+    productDescription: "Contemporary designer wardrobe with frosted glass panels. LED strip lighting and premium hardware. Statement piece for modern luxury bedrooms.",
+    features: [
+      "Contemporary design",
+      "Frosted glass panels",
+      "LED strip lighting",
+      "Premium hardware",
+      "Statement piece for luxury bedrooms",
+      "Spacious interior",
+      "Easy to assemble"
+    ]
   },
   {
     image: "image3.png",
@@ -459,7 +746,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Lockers",
-    productDescription: "Ultra-compact steel locker for personal storage. Ideal for small spaces and individual use. Reliable locking mechanism ensures security of personal belongings."
+    productDescription: "Ultra-compact steel locker for personal storage. Ideal for small spaces and individual use. Reliable locking mechanism ensures security of personal belongings.",
+    features: [
+      "Ultra-compact design",
+      "Steel construction",
+      "Reliable locking mechanism",
+      "Personal storage solution",
+      "Ideal for small spaces",
+      "Spacious interior",
+      "Affordable price"
+    ]
   },
   {
     image: "image4.png",
@@ -473,7 +769,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Bedroom Furniture",
     thirdLevelCategory: "Luxury Storage",
-    productDescription: "Luxurious ebony finish armoire for master bedrooms. Hand-crafted details with premium hardware. Spacious interior with multiple storage compartments."
+    productDescription: "Luxurious ebony finish armoire for master bedrooms. Hand-crafted details with premium hardware. Spacious interior with multiple storage compartments.",
+    features: [
+      "Luxurious ebony finish",
+      "Hand-crafted details",
+      "Premium hardware",
+      "Spacious interior",
+      "Multiple storage compartments",
+      "Suitable for master bedrooms",
+      "Easy to assemble"
+    ]
   },
   {
     image: "image5.png",
@@ -487,7 +792,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Industrial Furniture",
     thirdLevelCategory: "Tool Storage",
-    productDescription: "Heavy-duty tool storage cabinet for workshops and garages. Multiple drawers and compartments for organized tool storage. Powder-coated finish resists scratches."
+    productDescription: "Heavy-duty tool storage cabinet for workshops and garages. Multiple drawers and compartments for organized tool storage. Powder-coated finish resists scratches.",
+    features: [
+      "Heavy-duty construction",
+      "Multiple drawers",
+      "Compartments for organization",
+      "Powder-coated finish",
+      "Resists scratches",
+      "Suitable for workshops/garages",
+      "Spacious interior"
+    ]
   },
   {
     image: "image1.png",
@@ -501,7 +815,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Modern Wardrobes",
-    productDescription: "Contemporary sliding wardrobe with contrasting black and white finish. Minimalist design with premium sliding hardware. Perfect for modern bedroom aesthetics."
+    productDescription: "Contemporary sliding wardrobe with contrasting black and white finish. Minimalist design with premium sliding hardware. Perfect for modern bedroom aesthetics.",
+    features: [
+      "Contemporary design",
+      "Contrasting black and white finish",
+      "Minimalist design",
+      "Premium sliding hardware",
+      "Perfect for modern bedrooms",
+      "Spacious interior",
+      "Easy to assemble"
+    ]
   },
   {
     image: "image2.png",
@@ -515,7 +838,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Kids Furniture",
     thirdLevelCategory: "Baby Storage",
-    productDescription: "Specially designed organizer for baby clothes and accessories. Child-safe materials and construction. Multiple small compartments perfect for tiny clothes and toys."
+    productDescription: "Specially designed organizer for baby clothes and accessories. Child-safe materials and construction. Multiple small compartments perfect for tiny clothes and toys.",
+    features: [
+      "Specially designed for baby clothes",
+      "Child-safe materials",
+      "Multiple small compartments",
+      "Perfect for tiny clothes and toys",
+      "Spacious interior",
+      "Affordable price",
+      "Easy to assemble"
+    ]
   },
   {
     image: "image3.png",
@@ -529,7 +861,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Commercial Furniture",
     thirdLevelCategory: "Staff Lockers",
-    productDescription: "Large capacity 20-unit locker system for employee storage. Individual compartments with secure locks. Ideal for offices, factories, and commercial establishments."
+    productDescription: "Large capacity 20-unit locker system for employee storage. Individual compartments with secure locks. Ideal for offices, factories, and commercial establishments.",
+    features: [
+      "Large capacity 20-unit system",
+      "Individual compartments",
+      "Secure locks",
+      "Ideal for offices/factories/commercial establishments",
+      "Spacious interior",
+      "Durable design",
+      "Easy to assemble"
+    ]
   },
   {
     image: "image4.png",
@@ -543,7 +884,16 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Premium Wardrobes",
-    productDescription: "High-end wooden wardrobe with natural wood finish. Solid construction with premium fittings and hardware. Timeless design suitable for luxury interiors."
+    productDescription: "High-end wooden wardrobe with natural wood finish. Solid construction with premium fittings and hardware. Timeless design suitable for luxury interiors.",
+    features: [
+      "High-end wooden construction",
+      "Natural wood finish",
+      "Solid construction",
+      "Premium fittings and hardware",
+      "Timeless design",
+      "Suitable for luxury interiors",
+      "Spacious interior"
+    ]
   },
   {
     image: "image5.png",
@@ -557,6 +907,15 @@ export const almirah = [
     toplevelCategory: "Furniture",
     secondLevelCategory: "Storage",
     thirdLevelCategory: "Corner Storage",
-    productDescription: "Cleverly designed corner storage unit maximizes unused corner space. Ivory finish blends with any decor. Multiple shelves and hanging options for versatile storage."
+    productDescription: "Cleverly designed corner storage unit maximizes unused corner space. Ivory finish blends with any decor. Multiple shelves and hanging options for versatile storage.",
+    features: [
+      "Cleverly designed corner unit",
+      "Maximizes unused corner space",
+      "Ivory finish",
+      "Multiple shelves",
+      "Hanging options",
+      "Versatile storage solution",
+      "Spacious interior"
+    ]
   }
 ];
