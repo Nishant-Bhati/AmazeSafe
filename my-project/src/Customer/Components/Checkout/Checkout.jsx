@@ -65,7 +65,7 @@ export default function Checkout() {
                 Back
               </Button>
             </Box>
-            <div>
+            <div className="mt-10">
               {
                 step==2?<DeliveryAddressForm/>:<OrderSummary/>
               }

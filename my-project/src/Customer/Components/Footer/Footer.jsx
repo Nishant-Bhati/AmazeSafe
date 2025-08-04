@@ -82,7 +82,7 @@ const Footer = () => {
       >
         {/* Company Sections */}
         {footerSections.map((section, index) => (
-          <Grid item xs={12} sm={6} md={2.4} key={index}>
+          <Grid size={{ xs: 12, sm: 6, md: 2.4 }} key={index}>
             <Typography
               variant="h6"
               sx={{
@@ -118,7 +118,7 @@ const Footer = () => {
         ))}
 
         {/* Contact Section */}
-        <Grid item xs={12} sm={6} md={2.4}>
+        <Grid size={{ xs: 12, sm: 6, md: 2.4 }}>
           <Typography
             variant="h6"
             sx={{
@@ -155,7 +155,7 @@ const Footer = () => {
         </Grid>
 
         {/* Social Media Section */}
-        <Grid item xs={12} sm={6} md={2.4}>
+        <Grid size={{ xs: 12, sm: 6, md: 2.4 }}>
           <Typography
             variant="h6"
             sx={{
