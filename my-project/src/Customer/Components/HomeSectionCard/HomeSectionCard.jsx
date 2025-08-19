@@ -1,12 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const HomeSectionCard = ({product}) => {
+    const navigate = useNavigate();
   return (
-    <div className="cursor-pointer bg-white flex flex-col rounded-lg shadow-lg overflow-hidden w-[15rem] mx-3">
+    <div onClick={() => navigate(`/product/${product.id}`)} className="cursor-pointer bg-white flex flex-col rounded-lg shadow-lg overflow-hidden w-[15rem] mx-3">
       <div className="h-[13rem] w-[10rem]">
         <img
           className="object-cover object-top w-full h-full"
-          src={product.image}
+          src={`/${product.image}`} 
           alt="Product"
         />
       </div>

@@ -2,9 +2,11 @@ import React from "react";
 import AddressCard from "../AddressCard/AddressCard";
 import { Grid, Button, Box } from "@mui/material";
 import TextField from "@mui/material/TextField";
+import { useNavigate } from "react-router-dom";
 
 
 const DeliveryAddressForm = () => {
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     
@@ -20,6 +22,9 @@ const DeliveryAddressForm = () => {
     }
     console.log("Form submitted",address);
   };
+  const handleDelivery = () => {
+    navigate('/checkout?step=3');
+  }
   return (
     <div>
       <Grid container spacing={4}>
@@ -30,6 +35,7 @@ const DeliveryAddressForm = () => {
           <div className="p-5 py-7 cursor-pointer">
             <AddressCard />
             <Button
+              onClick={handleDelivery}
               sx={{ mt: 2, bgcolor: "violet-600", color: "white" }}
               size="large"
               variant="contained"
@@ -120,6 +126,7 @@ const DeliveryAddressForm = () => {
                     size="large"
                     variant="contained"
                     type="submit"
+                    onClick={handleDelivery}
                   >
                     DELIVER HERE
                   </Button>

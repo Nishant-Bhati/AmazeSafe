@@ -1,11 +1,13 @@
 import React from "react";
 import "./ProductCard.css";
+import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({product}) => {
+    const navigate = useNavigate();
     return (
-        <div className="ProductCard w-[15rem] m-3 transition-all cursor-pointer">
+        <div  onClick={() => navigate(`/product/${product.id}`)} className="ProductCard w-[15rem] m-3 transition-all cursor-pointer">
             <div className="h-[20rem]">
-                <img className="h-full w-full object-cover object-left-top " src={product.image} alt="" />
+                <img className="h-full w-full object-cover object-left-top " src={`/${product.image}`} alt="" />
             </div>
             <div className="textpart bg-white p-3">
                 <div>

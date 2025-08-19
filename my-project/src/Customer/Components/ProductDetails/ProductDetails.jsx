@@ -2,17 +2,26 @@ import { StarIcon } from "@heroicons/react/20/solid";
 import { Rating } from "@mui/material";
 import { almirah } from "../../../Data/almirah";
 import HomeSectionCard from "../HomeSectionCard/HomeSectionCard";
+import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function ProductDetails({ productId = 0 }) {
+export default function ProductDetails() {
+  const navigate = useNavigate();
+  const handleAddToCart = () => {
+    navigate('/cart');
+  }
+  const params = useParams();
+  const productId = params.productId;
+
   // Get the specific product from the array
-  const product = almirah[productId] || almirah[0];
+  const product = almirah.find((p) => p.id == productId) || almirah[0];
 
   // Get similar products (excluding current product)
-  const similarProducts = almirah.filter((_, index) => index !== productId);
+  const similarProducts = almirah.filter((p) => p.id != productId);
 
   return (
     <div className="bg-white">
@@ -74,7 +83,7 @@ export default function ProductDetails({ productId = 0 }) {
             <div className="overflow-hidden rounded-lg max-w-[30rem] max-h-[35rem]">
               <img
                 alt={product.title}
-                src={product.image}
+                src={`/${product.image}`}
                 className="row-span-2 aspect-3/4 size-full rounded-lg object-cover max-lg:hidden"
               />
             </div>
@@ -84,7 +93,7 @@ export default function ProductDetails({ productId = 0 }) {
                 <div key={index} className="max-w-[5rem] max-h-[5rem] mt-4">
                   <img
                     alt={item.title}
-                    src={item.image}
+                    src={`/${item.image}`}
                     className="col-start-2 aspect-3/2 size-full rounded-lg object-cover max-lg:hidden"
                   />
                 </div>
@@ -133,8 +142,8 @@ export default function ProductDetails({ productId = 0 }) {
 
               <form className="mt-10">
                 <button
-                  type="submit"
-                  className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-hidden"
+                  onClick={handleAddToCart}
+                  className="mt-10 flex w-full items-center justify-center rounded-md border cursor-pointer border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-hidden"
                 >
                   Add to Cart
                 </button>

@@ -1,7 +1,12 @@
 import React from "react";
 import CartItem from "./CartItem";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
+    const navigate = useNavigate();
+    const handleCheckout = () => {
+        navigate('/checkout?step=2');
+    }
   return (
     <div>
       <div className="lg:grid grid-cols-3 lg:px-16 relative">
@@ -30,7 +35,7 @@ const Cart = () => {
                 <p className="text-green-600">₹18200</p>
               </div>
             </div>
-            <button  className="w-full mt-5 bg-violet-600 text-white py-2 rounded-md hover:bg-violet-700">
+            <button onClick={handleCheckout} className="w-full mt-5 bg-violet-600 text-white py-2 rounded-md hover:bg-violet-700">
               Proceed to Checkout
             </button>
           </div>

@@ -1,17 +1,23 @@
 import React from 'react'
 import { Grid } from '@mui/material'
 import AdjustIcon from "@mui/icons-material/Adjust";
+import { useNavigate } from 'react-router-dom';
 
 
 const OrderCard = () => {
+    const navigate = useNavigate();
+    
   return (
-    <div className='p-5 shadow-md shadow-black hover:shadow-xl cursor-pointer'>
+    <div
+      onClick={() => navigate(`/account/order/${1}`)}
+      className="p-5 shadow-md shadow-black hover:shadow-xl cursor-pointer"
+    >
       <Grid container spacing={2} sx={{ justifyContent: "space-between" }}>
         <Grid item size={{ xs: 6, lg: 3 }}>
           <div className="flex cursor-pointer ">
             <img
               className="w-[5rem] h-[5rem] object-cover object-top"
-              src="image1.png"
+              src={`/image1.png`}
               alt=""
             />
             <div className="ml-5 space-y-2">
@@ -37,16 +43,18 @@ const OrderCard = () => {
               </span>
             </p>
           )}
-          {true && <div>
-            <p>
-            <AdjustIcon
-                sx={{ width: "15px", height: "15px" }}
-                className="text-green-600 mr-2 text-sm"
-              />
-              <span className="font-semibold">Delivered on 25 Aug 2025</span>
-            </p>
-            <p className='text-xs ml-1'>Your order has been delivered</p>
-          </div> }
+          {true && (
+            <div>
+              <p>
+                <AdjustIcon
+                  sx={{ width: "15px", height: "15px" }}
+                  className="text-green-600 mr-2 text-sm"
+                />
+                <span className="font-semibold">Delivered on 25 Aug 2025</span>
+              </p>
+              <p className="text-xs ml-1">Your order has been delivered</p>
+            </div>
+          )}
         </Grid>
       </Grid>
     </div>

@@ -25,7 +25,7 @@ const OrderDetail = () => {
               <div className="flex items-center space-x-5">
                 <img
                   className="w-[5rem] h-[5rem] object-cover object-top"
-                  src="image1.png"
+                  src={`/image1.png`}
                   alt=""
                 />
                 <div className="space-y-2">

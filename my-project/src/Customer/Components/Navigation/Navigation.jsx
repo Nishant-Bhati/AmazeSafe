@@ -21,6 +21,8 @@ function classNames(...classes) {
 
 function Navigation() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+
 
   const [openAuthModal, setOpenAuthModal] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
@@ -41,7 +43,7 @@ function Navigation() {
   };
 
   const handleCategoryClick = (category, section, item, close) => {
-    // navigate(`/${category.id}/${section.id}/${item.id}`);
+    navigate(`/${category.id}/${section.id}/${item.id}`);
     close();
   };
 
@@ -156,7 +158,17 @@ function Navigation() {
                             >
                               {section.items.map((item) => (
                                 <li key={item.name} className="flow-root">
-                                  <p className="-m-2 block p-2 text-gray-500">
+                                  <p
+                                    onClick={() =>
+                                      handleCategoryClick(
+                                        category,
+                                        section,
+                                        item,
+                                        close
+                                      )
+                                    }
+                                    className="-m-2 block p-2 text-gray-500 cursor-pointer"
+                                  >
                                     {item.name}
                                   </p>
                                 </li>
@@ -398,7 +410,9 @@ function Navigation() {
                           "aria-labelledby": "basic-button",
                         }}
                       >
-                        <MenuItem>My Orders</MenuItem>
+                        <MenuItem onClick={() => navigate("/account/order")}>
+                          My Orders
+                        </MenuItem>
                         <MenuItem>Logout</MenuItem>
                       </Menu>
                     </div>
@@ -429,7 +443,10 @@ function Navigation() {
 
                 {/* Cart */}
                 <div className="ml-4 flow-root lg:ml-6">
-                  <Button className="group -m-2 flex items-center p-2">
+                  <Button
+                    onClick={() => navigate("/Cart")}
+                    className="group -m-2 flex items-center p-2"
+                  >
                     <ShoppingBagIcon
                       className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                       aria-hidden="true"
@@ -449,4 +466,3 @@ function Navigation() {
   );
 }
 export default Navigation;
-
